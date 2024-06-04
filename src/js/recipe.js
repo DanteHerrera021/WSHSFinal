@@ -81,6 +81,8 @@ async function fetchData() {
     const newHref = `./step.html?recipeId=${Recipe[0].id}&stepNumber=1`;
     console.log(newHref);
     $('#step-redirect').attr('href', newHref);
+
+    $("#recipe-img").attr("src", `./src/img/${unformattedRecipeName}.jpg`)
 }
 
 window.onload = fetchData()

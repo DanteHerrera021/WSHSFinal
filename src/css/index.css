@@ -80,7 +80,7 @@ main > header > div {
 }
 
 .card.selected {
-  height: 25vh;
+  height: 35vh;
   background-color: #f7f7f7;
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.25);
 }

@@ -7,8 +7,11 @@ async function loadConfig() {
 }
 
 async function addProfile(stoveProfileName, boilPoint, roomTemp, boilTimeMed, boilTimeHigh) {
-    let medWattage = (((2 * 0.2365882365) * 1000) * 4.186 * ((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9)) / boilTimeMed;
-    let highWattage = (((2 * 0.2365882365) * 1000) * 4.186 * ((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9)) / boilTimeHigh;
+    // let medWattage = 0.00 + (((3 * 0.2365882365) * 1000) * 4.186 * ((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9)) / boilTimeMed;
+    // let highWattage = 0.00 + (((3 * 0.2365882365) * 1000) * 4.186 * ((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9)) / boilTimeHigh;
+
+    let medWattage = 0.00 + (((3 * 0.2365882365) * 1000) * 4.186 * (((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9))) / boilTimeMed;
+    let highWattage = 0.00 + (((3 * 0.2365882365) * 1000) * 4.186 * (((boilPoint - 32) * 5 / 9) - ((roomTemp - 32) * 5 / 9))) / boilTimeHigh;
 
     let heatSlope = (highWattage - medWattage) / 50
 

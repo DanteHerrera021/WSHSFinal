@@ -1,0 +1,43 @@
+:root {
+  --progress-bar-width: 50vw;
+  --progress-bar-height: 50vw;
+  --font-size: 2rem;
+}
+
+main {
+  padding: 5vw;
+}
+
+main > header > h1 {
+  font-size: 36pt;
+  text-align: center;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress {
+  width: var(--progress-bar-width);
+  height: var(--progress-bar-height);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+
+.percentage {
+  position: relative;
+  font-size: var(--font-size);
+  color: rgb(0, 0, 0, 0.8);
+}

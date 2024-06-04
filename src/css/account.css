@@ -1,0 +1,31 @@
+.hero-img-container {
+  height: 30vh;
+}
+
+.account-img-container {
+  width: 30vw;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: rgb(223, 223, 223);
+  margin: 0 auto;
+  position: relative;
+  top: -10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -5vh;
+}
+
+header > div > h2 {
+  text-align: center;
+  position: relative;
+  top: -5vh;
+}

@@ -1,0 +1,59 @@
+main {
+  padding: 5vw;
+}
+
+figure.main-img-container {
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.text {
+  margin-top: 3vh;
+}
+
+.text > .header-text-container {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 5px;
+}
+
+.text > .header-text-container > * {
+  font-family: var(--header-font);
+}
+
+.text > .additional-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: var(--border-bold);
+  border-radius: 5px;
+  padding: 20px 0;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.ingredients-container,
+button {
+  margin-bottom: 20px;
+}
+
+.ingredients-container > header > *,
+.description > header > * {
+  margin-bottom: 10px;
+  font-family: var(--header-font);
+}
+
+.ingredient {
+  padding: 10px 0;
+}
+
+.ingredient:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.286);
+}
+
+.desc-paragraph:not(:last-child) {
+  margin-bottom: 1em;
+}

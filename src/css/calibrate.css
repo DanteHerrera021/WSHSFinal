@@ -1,0 +1,111 @@
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: var(--header-font);
+}
+
+main {
+  padding: 5vw;
+}
+
+.container-f {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.container-f .verify-buttons {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main > header {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.main-header {
+  margin: 20px auto;
+}
+
+#stove-cal-inputs > div {
+  margin: 3vh auto;
+  margin-top: 0;
+}
+
+.oven-selector {
+  display: flex;
+  width: 75vw;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2em;
+  border-radius: 10px;
+  border: 2px solid var(--accent-main);
+  background-color: rgb(252, 243, 228) /*var(--bg-2)*/;
+}
+
+.oven-selector > input {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.oven-selector > div.label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer {
+  width: 75vw;
+  display: flex;
+  width: 75vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 2em;
+  border-radius: 10px;
+  border: 2px solid var(--accent-main);
+  background-color: rgb(252, 243, 228);
+}
+
+#timer {
+  font-size: 3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"] {
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#medium-information {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}

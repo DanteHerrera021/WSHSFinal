@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ovenpedia</title>
+    <link rel="icon" type="image/x-icon" href="./logo.ico" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/button.css" />
+    <link rel="stylesheet" href="./src/css/recipe.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <header>
+        <div class="img">
+          <figure class="main-img-container">
+            <img
+              src="./src/img/beef-tacos.jpg"
+              alt="recipe name"
+              id="recipe-img"
+            />
+          </figure>
+        </div>
+        <div class="text">
+          <div class="header-text-container">
+            <h1 id="header-text"></h1>
+          </div>
+          <div class="additional-info">
+            <div class="time-container">
+              <h3 class="time-label">Cook time:</h3>
+              <p id="time"></p>
+            </div>
+            <div class="border"></div>
+            <div class="servings-container">
+              <h3 class="servings-label">Serving size:</h3>
+              <p id="serving-size"></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <article>
+        <div class="ingredients-container">
+          <header>
+            <h2>Ingredients</h2>
+          </header>
+          <ul id="ingredients"></ul>
+        </div>
+        <a href="./step.html">
+          <button>Start the recipe ></button>
+        </a>
+        <div class="description">
+          <header>
+            <h2>About the Recipe</h2>
+          </header>
+        </div>
+      </article>
+    </main>
+    <script src="src/js/header.js"></script>
+    <script type="module" src="src/js/recipe.js"></script>
+  </body>
+</html>

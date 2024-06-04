@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ovenpedia</title>
+    <link rel="icon" type="image/x-icon" href="./logo.ico" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/step.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <header>
+        <h1>Step 1 -</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa
+          molestias fugit hic, enim animi consequuntur soluta nulla mollitia id
+          tempore ducimus consequatur asperiores dolore rerum non, repudiandae
+          aliquam eligendi.
+        </h2>
+        <h2 id="time-label">Time -</h2>
+      </header>
+      <article>
+        <div class="timer-container">
+          <div
+            class="circular-progress"
+            data-inner-circle-color="white"
+            data-percentage="100"
+            data-progress-color="blue"
+            data-bg-color="lightgray"
+          >
+            <div class="inner-circle"></div>
+            <p class="percentage">0%</p>
+          </div>
+        </div>
+        <div></div>
+      </article>
+    </main>
+    <script src="src/js/header.js"></script>
+    <script type="module" src="src/js/step.js"></script>
+  </body>
+</html>

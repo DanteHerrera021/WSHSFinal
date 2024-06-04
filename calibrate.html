@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calibrate your oven</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/button.css" />
+    <link rel="stylesheet" href="./src/css/calibrate.css" />
+    <link rel="icon" type="image/x-icon" href="./logo.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="main-header">
+      <header>
+        <h1>Stove Calibration</h1>
+      </header>
+    </div>
+    <main>
+      <div id="verify-stove-change">
+        <div class="container-f">
+          <h2>Are you sure you want to add a new stove profile?</h2>
+          <div class="verify-buttons">
+            <a href="./index.html"><button>Go Home</button></a>
+            <button id="proceed-btn">Proceed</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden" id="med-calibration">
+        <div class="profile-name-container">
+          <label for="profile-name">Profile Name</label>
+          <input
+            type="text"
+            id="profile-name"
+            autocomplete="off"
+            placeholder="Enter the name for this stove."
+          />
+        </div>
+        <div class="room-temp-container">
+          <label for="room-temp">Room Temperature</label>
+          <input
+            type="text"
+            id="room-temp"
+            autocomplete="off"
+            placeholder="Enter the current room temperature."
+          />
+        </div>
+
+        <div id="medium-information">
+          <p>
+            Please make sure the stove for this profile is at room temperature,
+            and set to medium. Stop the timer once the water starts to boil.
+            Press proceed when you are ready to continue.
+          </p>
+          <button id="medium-proceed">Proceed</button>
+        </div>
+      </div>
+      <div class="hidden" id="timer-container">
+        <div class="time-container"><p id="timer">0:00</p></div>
+        <div class="timer-btn-container">
+          <button id="timerControl">Start Timer</button>
+        </div>
+      </div>
+
+      <div class="hidden" id="high-calibration">
+        <div id="high-information">
+          <p>
+            Please make sure the same stove for this profile is at room
+            temperature, and set to high. Press proceed when you are ready to
+            continue.
+          </p>
+          <button id="high-proceed">Proceed</button>
+        </div>
+      </div>
+      <div class="hidden" id="verification-screen">
+        <h2>
+          <span id="profile-name-text"></span> has been added successfully!
+        </h2>
+      </div>
+    </main>
+    <script type="module" src="src/js/calibratePageHandle.js"></script>
+    <script src="src/js/cookTime.js"></script>
+    <script src="src/js/header.js"></script>
+  </body>
+</html>

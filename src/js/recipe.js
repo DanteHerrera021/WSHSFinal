@@ -77,6 +77,10 @@ async function fetchData() {
     ingredients.forEach(ingredient => {
         $('#ingredients').append(`<li class="ingredient">${ingredient.ingredientAmount} ${ingredient.ingredientName.toLowerCase()}</li>`)
     })
+
+    const newHref = `./step.html?recipeId=${Recipe[0].id}&stepNumber=1`;
+    console.log(newHref);
+    $('#step-redirect').attr('href', newHref);
 }
 
 window.onload = fetchData()

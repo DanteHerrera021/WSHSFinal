@@ -6,6 +6,7 @@
     <title>Ovenpedia</title>
     <link rel="icon" type="image/x-icon" href="./logo.ico" />
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/button.css" />
     <link rel="stylesheet" href="./src/css/step.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -14,29 +15,26 @@
     <header></header>
     <main>
       <header>
-        <h1>Step 1 -</h1>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsa
-          molestias fugit hic, enim animi consequuntur soluta nulla mollitia id
-          tempore ducimus consequatur asperiores dolore rerum non, repudiandae
-          aliquam eligendi.
-        </h2>
-        <h2 id="time-label">Time -</h2>
+        <h1 id="main-header"></h1>
+        <h2 id="step-desc"></h2>
       </header>
       <article>
-        <div class="timer-container">
-          <div
-            class="circular-progress"
-            data-inner-circle-color="white"
-            data-percentage="100"
-            data-progress-color="blue"
-            data-bg-color="lightgray"
-          >
-            <div class="inner-circle"></div>
-            <p class="percentage">0%</p>
+        <div id="dropdown-container">
+          <select id="stove-dropdown">
+            <option value="">Select a Stove Profile</option>
+          </select>
+        </div>
+        <div id="timer-container">
+          <h2 class="timer">Please select a stove profile</h2>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="button-container">
+            <button id="start-btn">Start</button>
+            <a id="back-btn" href=""><button>Go Back</button></a>
+            <a id="next-btn" href=""><button>Next Step</button></a>
           </div>
         </div>
-        <div></div>
       </article>
     </main>
     <script src="src/js/header.js"></script>

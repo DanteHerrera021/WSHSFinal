@@ -49,18 +49,6 @@ main > header > div {
   overflow: hidden;
 }
 
-@media (max-width: 1000px) {
-  .main-header {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-header {
-    font-size: 1.75em;
-  }
-}
-
 .main-header > * {
   font-family: var(--header-font);
 }
@@ -134,4 +122,25 @@ main > header > div {
 
 .card .go-to-container a {
   color: rgb(77, 77, 77);
+}
+
+@media (max-width: 1000px) {
+  .main-header {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-header {
+    font-size: 20px;
+  }
+  #card-container {
+    padding: 1em 0;
+  }
 }

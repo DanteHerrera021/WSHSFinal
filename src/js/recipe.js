@@ -25,7 +25,7 @@ function formatTime(time) {
 }
 
 async function loadConfig() {
-    const response = await fetch('/config.json');
+    const response = await fetch('./src/config.json');
     const config = await response.json();
     return config;
 }

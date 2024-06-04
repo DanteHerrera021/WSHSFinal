@@ -30,7 +30,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 
 async function loadConfig() {
-    const response = await fetch('/config.json');
+    const response = await fetch('./src/config.json');
     const config = await response.json();
     return config;
 }
